@@ -153,6 +153,29 @@ httds://notquiteright.org
 
 Matches MAC addresses defined in [RFC5342](https://tools.ietf.org/html/rfc5342).
 
+#### `Stdlib::Number`
+
+Matches a `Numeric` (`Integer` or `Float`) as well as a `String` that looks like a `Numeric`.
+
+Acceptable input example:
+
+```shell
+'0'
+'123'
+'0.1234'
+1
+3.141
+```
+
+Unacceptable input example:
+
+```shell
+'hello'
+'10.10.0.1'
+''
+false
+```
+
 #### `Stdlib::Unixpath`
 
 Matches absolute paths on Unix operating systems.
